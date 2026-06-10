@@ -1,0 +1,20 @@
+.collapse,
+.accordion-collapse,
+.navbar-collapse {
+  visibility: visible !important;
+}
+
+.collapse:not(.show) {
+  display: none !important;
+}
+
+.collapse.show {
+  display: block !important;
+}
+
+.collapsing {
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
