@@ -2,7 +2,6 @@
 $booking = null;
 if (isset($_GET['success']) && !empty($_SESSION['booking_success'])) {
     $booking = $_SESSION['booking_success'];
-    // НЕ удаляем — пусть хранится в сессии
 }
 ?>
 
@@ -92,12 +91,8 @@ if (isset($_GET['success']) && !empty($_SESSION['booking_success'])) {
   </div>
 </div>
 <?php if ($booking): ?>
-
-<!-- Затемнение — это просто ссылка-якорь -->
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
   <div class="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
-
-    <!-- Иконка -->
     <div class="flex justify-center mb-4">
       <div class="w-16 h-16 rounded-full bg-[#c9a84c]/20 flex items-center justify-center">
         <svg class="w-8 h-8 text-[#c9a84c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,11 +100,8 @@ if (isset($_GET['success']) && !empty($_SESSION['booking_success'])) {
         </svg>
       </div>
     </div>
-
     <h2 class="text-xl font-bold text-white text-center mb-1">Запис підтверджено!</h2>
     <p class="text-zinc-400 text-sm text-center mb-6">Деталі вашого запису:</p>
-
-    <!-- Данные -->
     <div class="space-y-3 bg-zinc-800 rounded-xl p-4 mb-6">
       <div class="flex justify-between text-sm">
         <span class="text-zinc-400">Ім'я:</span>
@@ -144,14 +136,10 @@ if (isset($_GET['success']) && !empty($_SESSION['booking_success'])) {
         <p class="text-white mt-1"><?= htmlspecialchars($booking['comment'] ?: '—') ?></p>
       </div>
     </div>
-
-    <!-- Кнопка закрытия — просто ссылка которая убирает success из URL -->
     <a href="index.php?action=coll"
       class="block w-full bg-[#c9a84c] hover:bg-[#d4b86a] text-black font-black py-3 rounded-lg transition text-sm uppercase tracking-wide text-center">
       Зрозуміло
     </a>
-
   </div>
 </div>
-
 <?php endif; ?>
