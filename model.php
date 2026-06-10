@@ -1,5 +1,5 @@
 <?php
-class Model {
+class model {
     private $conn;
 
     public function __construct() {
