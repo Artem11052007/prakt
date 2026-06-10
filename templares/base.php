@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://img.icons8.com/ios/100/tattoo-machine.png">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/prakt/public/bootstrap-5.3.6-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/prakt/public/css/style.css">
+  <link rel="stylesheet" href="/public/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -24,7 +24,7 @@
   <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
 
     <a class="navbar-brand py-0 m-0" href="index.php?action=view1">
-      <img src="/prakt/public/img/icon.png" alt="icon" height="50" class="opacity-75">
+      <img src="/public/img/icon.png" alt="icon" height="50" class="opacity-75">
     </a>
 
     <ul class="nav flex-row flex-wrap justify-content-center gap-1 list-unstyled m-0">
@@ -131,7 +131,7 @@
   </a>
 <?php endif; ?>
 <?php endif; ?>
-<script src="/prakt/public/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
-<script src="/prakt/public/javaskript/js.js"></script>
+<script src="/public/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+<script src="/public/javaskript/js.js"></script>
 </body>
 </html>
