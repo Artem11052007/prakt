@@ -39,7 +39,7 @@
   </div>
   <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
     <div data-cat="tribal" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/12.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/12.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Трайбл</span></p>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div data-cat="japan" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/16.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/16.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Японія</span></p>
@@ -55,7 +55,7 @@
       </div>
     </div>
     <div data-cat="gothic" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/22.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/22.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Готика</span></p>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div data-cat="tribal" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/14.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/14.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Трайбл</span></p>
@@ -71,7 +71,7 @@
       </div>
     </div>
     <div data-cat="gothic" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/20.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/20.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Готика</span></p>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div data-cat="gothic" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/21.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/21.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Готика</span></p>
@@ -87,7 +87,7 @@
       </div>
     </div>
     <div data-cat="polinesia" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/18.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/18.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Полінезія</span></p>
@@ -95,7 +95,7 @@
       </div>
     </div>
     <div data-cat="tribal" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/13.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/13.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Трайбл</span></p>
@@ -103,7 +103,7 @@
       </div>
     </div>
     <div data-cat="minimal" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/23.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/23.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Мінімалізм</span></p>
@@ -111,7 +111,7 @@
       </div>
     </div>
     <div data-cat="polinesia" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/17.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/17.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Полінезія</span></p>
@@ -119,7 +119,7 @@
       </div>
     </div>
     <div data-cat="tribal" class="gallery-card group relative rounded-xl overflow-hidden bg-[#111922] ring-1 ring-[#2e3d50] hover:ring-[#c9a84c]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(201,168,76,0.12)]">
-      <img src="/prakt/public/img/15.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+      <img src="/public/img/15.jpg" alt="tattoo" class="w-full aspect-square object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300">
       <div class="p-4">
         <span style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-[0.6rem] tracking-[0.2em] uppercase font-bold">Ескіз</span>
         <p class="text-[#ccd8e4] text-xs mt-1">Стиль: <span class="text-[#a8b8c8]">Трайбл</span></p>

@@ -228,7 +228,7 @@
           </div>
 
           <?php if (!empty($review['tattoo_photo'])): ?>
-          <img src="/prakt/<?= htmlspecialchars($review['tattoo_photo']) ?>"
+          <img src="/<?= htmlspecialchars($review['tattoo_photo']) ?>"
                class="w-full h-48 object-cover" alt="tattoo">
           <?php else: ?>
           <div class="w-full h-48 bg-zinc-700 flex items-center justify-center">
