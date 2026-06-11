@@ -315,8 +315,8 @@
           <div class="flex items-start gap-3">
             <input type="checkbox" id="privacy-agree" name="privacy_agree" required class="mt-1 accent-[#c9a84c]">
             <label for="privacy-agree" class="text-sm text-zinc-400">
-              Я погоджуюся з <a href="/privacy-policy.html" target="_blank" class="text-[#c9a84c] hover:underline">політикою конфіденційності</a> та
-              <a href="/terms-of-service.html" target="_blank" class="text-[#c9a84c] hover:underline">умовами використання</a>.
+              Я погоджуюся з <a href="index.php?action=pageNotFound" target="_blank" class="text-[#c9a84c] hover:underline">політикою конфіденційності</a> та
+              <a href="index.php?action=pageNotFound" target="_blank" class="text-[#c9a84c] hover:underline">умовами використання</a>.
             </label>
           </div>
           <button type="submit" class="w-full bg-[#c9a84c] hover:bg-[#d4b86a] text-black font-black py-3.5 rounded-lg transition tracking-wide text-sm uppercase">
