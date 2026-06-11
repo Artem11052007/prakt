@@ -39,20 +39,22 @@ class model {
             "INSERT INTO users (login, password, isAdmin) VALUES ('$login', '$password', 0)"
         );
     }
-
-    public function addReview($data) {
-    $name      = $this->conn->real_escape_string($data['customer_name']);
-    $email     = $this->conn->real_escape_string($data['customer_email'] ?? '');
+public function addReview($data) {
+    $name      = $data['customer_name'];
+    $email     = $data['customer_email'] ?? '';
     $rating    = (int)$data['rating'];
-    $master    = $this->conn->real_escape_string($data['master_select'] ?? '');
-    $text      = $this->conn->real_escape_string($data['review_text']);
-    $photoData = $this->conn->real_escape_string($data['tattoo_photo_data'] ?? '');
-    $photoType = $this->conn->real_escape_string($data['tattoo_photo_type'] ?? '');
+    $master    = $data['master_select'] ?? '';
+    $text      = $data['review_text'];
+    $photoData = $data['tattoo_photo_data'] ?? null;
+    $photoType = $data['tattoo_photo_type'] ?? '';
 
-    return $this->conn->query(
+    $stmt = $this->conn->prepare(
         "INSERT INTO reviews (customer_name, customer_email, rating, master_select, tattoo_photo_data, tattoo_photo_type, review_text)
-         VALUES ('$name', '$email', $rating, '$master', '$photoData', '$photoType', '$text')"
+         VALUES (?, ?, ?, ?, ?, ?, ?)"
     );
+
+    $stmt->bind_param('ssissss', $name, $email, $rating, $master, $photoData, $photoType, $text);
+    return $stmt->execute();
 }
 public function getPhotoById($id) {
     $id = (int)$id;
