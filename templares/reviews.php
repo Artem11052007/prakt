@@ -44,7 +44,7 @@
           </div>
           <img src="./public/img/1.jpg" class="w-full h-48 object-cover" alt="tattoo">
           <div class="p-4 flex-1">
-            <p class="text-zinc-300 text-sm">Шалено задоволена новим татуюванням! Майстер А просто чарівник, втілив мою ідею на 100%.</p>
+            <p class="text-zinc-300 text-sm">Шалено задоволений новим татуюванням! Майстер А просто чарівник, втілив мою ідею на 100%.</p>
           </div>
           <div class="px-4 py-2 bg-zinc-700 flex justify-between items-center">
             <small class="text-zinc-400 text-xs">40 хвилин тому</small>
@@ -92,7 +92,7 @@
           </div>
           <img src="./public/img/3.jpg" class="w-full h-48 object-cover" alt="tattoo">
           <div class="p-4 flex-1">
-            <p class="text-zinc-300 text-sm">Робив невеликий ескіз, все дуже швидко та якісно. Трохи було боляче, але результат того вартий.</p>
+            <p class="text-zinc-300 text-sm">Робила невеликий ескіз, все дуже швидко та якісно. Трохи було боляче, але результат того вартий.</p>
           </div>
           <div class="px-4 py-2 bg-zinc-700 flex justify-between items-center">
             <small class="text-zinc-400 text-xs">1 місяць тому</small>
@@ -296,7 +296,7 @@
             </select>
           </div>
           <div>
-            <label class="block text-sm font-medium mb-2 text-zinc-300">Фото вашого тату <span class="text-zinc-600">(необов'язково)</span>:</label>
+            <label class="block text-sm font-medium mb-2 text-zinc-300">Фото вашого тату:</label>
             <input type="file" id="tattoo-file" name="tattoo_photo" hidden accept="image/jpeg,image/png,image/gif">
             <div class="flex items-center gap-4">
               <button type="button" id="tattoo-btn"

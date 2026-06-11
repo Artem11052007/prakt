@@ -31,7 +31,7 @@
       <div class="p-8 relative">
         <div class="text-center mb-8">
           <div class="animate-pulse inline-block mb-4">
-            <img src="/prakt/public/img/icon.png" alt="icon" class="max-h-14 mx-auto opacity-90">
+            <img src="/public/img/icon.png" alt="icon" class="max-h-14 mx-auto opacity-90">
           </div>
           <h2 style="font-family:'Cinzel',serif;" class="text-[#c9a84c] text-2xl font-bold tracking-widest uppercase">VIP Tattoo</h2>
           <p style="font-family:'Cinzel',serif;" class="text-[#4d6070] text-[10px] tracking-[0.3em] uppercase mt-1 font-light">Авторизація</p>

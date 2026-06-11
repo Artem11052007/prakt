@@ -72,7 +72,7 @@
             <li>Консультація майстра</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;">Від <span>600</span> грн</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200 hover:text-zinc-950"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200 hover:text-zinc-950"
              style="color:#c9a84c; border-color:#c9a84c; hover:background:#c9a84c;">
             Записатися
           </a>
@@ -88,7 +88,7 @@
             <li>Погодинна оплата</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;"><span>1200</span> грн/година</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Дізнатись більше
           </a>
@@ -104,7 +104,7 @@
             <li>Перекриття (cover-up)</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;">Від <span>800</span> грн</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Обговорити
           </a>
@@ -126,7 +126,7 @@
             <li>Рекомендації по догляду</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;"><span>350</span> грн</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Записатися
           </a>
@@ -142,7 +142,7 @@
             <li>Рекомендації по догляду</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;"><span>500</span> грн</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Записатись
           </a>
@@ -163,7 +163,7 @@
             <li>Тривалість до 1.5 років</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;"><span>2500</span> грн</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Записатись
           </a>
@@ -183,7 +183,7 @@
             <li>Консультація</li>
           </ul>
           <div class="font-bold text-lg mt-4 mb-3" style="color:#c9a84c;">Від <span>400</span> грн/сеанс</div>
-          <a href="coll.html" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
+          <a href="index.php?action=coll" class="text-center px-6 py-2 text-xs font-bold tracking-widest uppercase border rounded-lg transition-all duration-200"
              style="color:#c9a84c; border-color:#c9a84c;">
             Дізнатись більше
           </a>
