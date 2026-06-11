@@ -227,7 +227,7 @@
             <span class="text-zinc-400 text-sm"><?= date('d.m.Y', strtotime($review['created_at'])) ?></span>
           </div>
 
-          <?php if (!empty($review['tattoo_photo'])): ?>
+          <?php if (!empty($review['tattoo_photo_type'])): ?>
           <img src="index.php?action=photo&id=<?= $review['id'] ?>"
                class="w-full h-48 object-cover" alt="tattoo">
           <?php else: ?>
