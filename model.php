@@ -41,18 +41,26 @@ class model {
     }
 
     public function addReview($data) {
-        $name   = $this->conn->real_escape_string($data['customer_name']);
-        $email  = $this->conn->real_escape_string($data['customer_email'] ?? '');
-        $rating = (int)$data['rating'];
-        $master = $this->conn->real_escape_string($data['master_select'] ?? '');
-        $photo  = $this->conn->real_escape_string($data['tattoo_photo'] ?? '');
-        $text   = $this->conn->real_escape_string($data['review_text']);
+    $name      = $this->conn->real_escape_string($data['customer_name']);
+    $email     = $this->conn->real_escape_string($data['customer_email'] ?? '');
+    $rating    = (int)$data['rating'];
+    $master    = $this->conn->real_escape_string($data['master_select'] ?? '');
+    $text      = $this->conn->real_escape_string($data['review_text']);
+    $photoData = $this->conn->real_escape_string($data['tattoo_photo_data'] ?? '');
+    $photoType = $this->conn->real_escape_string($data['tattoo_photo_type'] ?? '');
 
-        return $this->conn->query(
-            "INSERT INTO reviews (customer_name, customer_email, rating, master_select, tattoo_photo, review_text)
-             VALUES ('$name', '$email', $rating, '$master', '$photo', '$text')"
-        );
-    }
+    return $this->conn->query(
+        "INSERT INTO reviews (customer_name, customer_email, rating, master_select, tattoo_photo_data, tattoo_photo_type, review_text)
+         VALUES ('$name', '$email', $rating, '$master', '$photoData', '$photoType', '$text')"
+    );
+}
+public function getPhotoById($id) {
+    $id = (int)$id;
+    $result = $this->conn->query(
+        "SELECT tattoo_photo_data, tattoo_photo_type FROM reviews WHERE id = $id"
+    );
+    return $result ? $result->fetch_assoc() : null;
+}
 
     public function getAllReviews() {
         $result = $this->conn->query("SELECT * FROM reviews ORDER BY created_at DESC");

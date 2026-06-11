@@ -28,6 +28,7 @@ class Controller {
             'prise'   => $this->render('prise.php'),
             'reviews' => $this->reviews(),
             'booking' => $this->booking(),
+            'photo' => $this->showPhoto(),
             default   => $this->pageNotFound()
         };
     }
@@ -56,47 +57,60 @@ class Controller {
         }
         $this->render('login.php', ['error' => $error]);
     }
-    private function reviews() {
-        $error = '';
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $photoPath = '';
+private function reviews() {
+    $error = '';
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $photoData = '';
+        $photoType = '';
 
-            if (!empty($_FILES['tattoo_photo']['tmp_name'])) {
-                $allowed = ['image/jpeg', 'image/png', 'image/gif'];
-                $maxSize = 5 * 1024 * 1024;
-                if (!in_array($_FILES['tattoo_photo']['type'], $allowed)) {
-                    $error = 'Невірний формат файлу';
-                } elseif ($_FILES['tattoo_photo']['size'] > $maxSize) {
-                    $error = 'Файл занадто великий (макс 5МБ)';
-                } else {
-                    $uploadDir = 'public/uploads/';
-                    $photoPath = $uploadDir . uniqid() . '_' . basename($_FILES['tattoo_photo']['name']);
-                    move_uploaded_file($_FILES['tattoo_photo']['tmp_name'], $photoPath);
-                }
-            }
-            if (!$error) {
-                $result = $this->model->addReview([
-                    'customer_name'  => $_POST['customer_name']  ?? '',
-                    'customer_email' => $_POST['customer_email'] ?? '',
-                    'rating'         => $_POST['rating']         ?? 0,
-                    'master_select'  => $_POST['master_select']  ?? '',
-                    'tattoo_photo'   => $photoPath,
-                    'review_text'    => $_POST['review_text']    ?? '',
-                ]);
-
-                if ($result) {
-                    header("Location: index.php?action=reviews&success=1");
-                    exit();
-                }
-                $error = 'Помилка при збереженні.';
+        if (!empty($_FILES['tattoo_photo']['tmp_name'])) {
+            $allowed = ['image/jpeg', 'image/png', 'image/gif'];
+            $maxSize = 5 * 1024 * 1024;
+            if (!in_array($_FILES['tattoo_photo']['type'], $allowed)) {
+                $error = 'Невірний формат файлу';
+            } elseif ($_FILES['tattoo_photo']['size'] > $maxSize) {
+                $error = 'Файл занадто великий (макс 5МБ)';
+            } else {
+                $photoData = file_get_contents($_FILES['tattoo_photo']['tmp_name']);
+                $photoType = $_FILES['tattoo_photo']['type'];
             }
         }
-        $reviews = $this->model->getAllReviews();
-        $this->render('reviews.php', [
-            'error'   => $error,
-            'reviews' => $reviews
-        ]);
+
+        if (!$error) {
+            $result = $this->model->addReview([
+                'customer_name'     => $_POST['customer_name']  ?? '',
+                'customer_email'    => $_POST['customer_email'] ?? '',
+                'rating'            => $_POST['rating']         ?? 0,
+                'master_select'     => $_POST['master_select']  ?? '',
+                'tattoo_photo_data' => $photoData,
+                'tattoo_photo_type' => $photoType,
+                'review_text'       => $_POST['review_text']    ?? '',
+            ]);
+
+            if ($result) {
+                header("Location: index.php?action=reviews&success=1");
+                exit();
+            }
+            $error = 'Помилка при збереженні.';
+        }
     }
+    $reviews = $this->model->getAllReviews();
+    $this->render('reviews.php', [
+        'error'   => $error,
+        'reviews' => $reviews
+    ]);
+}
+private function showPhoto() {
+    $id    = (int)($_GET['id'] ?? 0);
+    $photo = $this->model->getPhotoById($id);
+    if ($photo && !empty($photo['tattoo_photo_data'])) {
+        header('Content-Type: ' . $photo['tattoo_photo_type']);
+        echo $photo['tattoo_photo_data'];
+        exit();
+    }
+    http_response_code(404);
+    exit();
+}
    private function booking() {
     $error = '';
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
